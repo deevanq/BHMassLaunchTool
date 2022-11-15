@@ -6,8 +6,6 @@
 	<title>BHMassLaunchTool</title>
 </head>
 <body>
-	<p>c:</p>
-
 	<script type="text/javascript">
 		function auth_open_api(id, secret) {
 			var formdata = new FormData();
@@ -19,6 +17,7 @@
 			  method: 'POST',
 			  headers: {
 			  	'User-Agent': 'BotMassLaunchTool',
+			  	'Access-Control-Allow-Origin': '*',
 			  	'Content-Type': 'application/x-www-form-urlencoded'
 			  },
 			  body: formdata,
